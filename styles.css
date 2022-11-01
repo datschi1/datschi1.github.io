@@ -63,6 +63,25 @@ button{
     padding: 0 12px;
 }
 
+.wave{
+    animation: waves 800ms infinite; 
+    display: inline-block;
+    font-size: 108px;
+}
+
+@keyframes waves {
+    0% {
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(20deg);
+
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
 /* Say Hello to the LANDING */
 
 #landing {
