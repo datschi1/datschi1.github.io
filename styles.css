@@ -31,6 +31,7 @@ a{
 
 .click:hover{
     transform:scale(1.1);
+    box-shadow: 0 12px 32px #242424;
 }
 
 .click:active{
