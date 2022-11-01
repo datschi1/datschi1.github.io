@@ -16,8 +16,114 @@ li{
     list-style-type: none;
 }
 
+section {
+    background-color: rgb(245, 245, 245);
+}
+
+a{
+    text-decoration: none;
+}
+
+.click{
+    transition: all 300ms ease;
+}
+
+
+.click:hover{
+    transform:scale(1.1);
+}
+
+.click:active{
+    transform: scale(0.8);
+}
+
+button{
+    cursor: pointer;
+}
+
+/* Say Hello to the LANDING */
+
+#landing {
+    min-height: 100vh;
+}
+
+.header{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 30px;
+}
+
+.title {
+    font-size: 120px;
+    margin-bottom: 12px;
+    text-align: left;
+    line-height: 1.1;
+}
+
+.header__para{
+    font-size: 24px;
+    line-height: 2;
+    max-width: 550px;
+    width: 100%;
+}
+
+.orange{
+    color: #f06449;
+}
+
+.social__buttons{
+    margin-top:16px;
+    display: flex;
+}
+
+.social__link{
+    background-color: #f06449;
+    color: white;
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+
+.mail__btn{
+    width: 70px;
+    height:70px;
+    font-size: 32px;
+    border-radius: 50%;
+    color:white;
+    background-color: #242424;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 32px;
+    right: 40px;
+    box-shadow: 0 12px 32px #242424;
+}
+
+
+
 /* Welcome to the NAVIGATION */
 
+@keyframes navAnimated {
+    0%{
+        padding:0;
+    }
+    100%{
+        padding:0 20px;
+    }
+}
 
 nav{
     display: flex;
@@ -27,7 +133,11 @@ nav{
     max-width: 1200px;
     margin: 0 auto;
     height: 100px;
+    padding: 0 20px;
+    animation: 1s ease-out 0s 1 navAnimated;
 }
+
+
 
 .nav__links{
     display: flex;
