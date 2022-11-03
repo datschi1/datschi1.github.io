@@ -112,6 +112,26 @@ button{
     }
 }
 
+
+
+@keyframes pointDown {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(6px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.point{
+    font-size: 64px;
+    animation: pointDown 1900ms ease infinite;
+    display: inline-block;
+}
+
 /* Say Hello to the LANDING */
 
 #landing {
