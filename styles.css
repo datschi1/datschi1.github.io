@@ -32,6 +32,7 @@ a{
 
 .otherClick:hover{
     transform:scale(1.1);
+    cursor: pointer;
 }
 
 .otherClick:active{
@@ -348,6 +349,7 @@ nav{
     display: flex;
     flex-direction: column ;
     justify-content: center;
+    position: relative;
 }
 
 .modal__about{
@@ -414,6 +416,52 @@ nav{
 }
 
 
+.modal__overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.modal__overlay--visible{
+    z-index: 1;
+}
+
+.modal__overlay--loading {
+    background-color: #242424;
+    
+    font-size: 80px;
+}
+
+.modal__overlay--success{
+    background-color: #4bb543;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding:28px;
+}
+
+.fa-spinner{
+    animation: spinning 1350ms infinite;
+}
+
+@keyframes spinning {
+    0%{
+        transform: rotate(0);
+        opacity: 0.6;
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 0.9;
+    }
+}
+
+
 .form__item{
     margin-bottom: 20px;
 }
@@ -438,6 +486,16 @@ nav{
     border-color: #f06449;
     color: #f06449;
 }
+
+.modal__exit{
+    position: absolute;
+    top:30px;
+    right: 40px;
+    color: white;
+    font-size: 36px ;
+    z-index: 100;
+}
+
 
 /* Welcome to the Projects */
 

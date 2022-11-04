@@ -7,6 +7,16 @@
     <title>Dachi Gordiashvili</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/315881593d.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("B7GqQT_chh3wgoW0W");
+      })();
+    </script>
+  
   </head>
 <!--Thanks for checking out my code!-->
   <body>
@@ -105,9 +115,9 @@
         <div class="modal__half modal__contact">
           <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
           <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities</h4>
-          <form id="contact__form">
+          <form id="contact__form" onsubmit="contact(event)">
             
-            <div class="form__item">
+            <div class="form__item"  >
               <label class="form__item--label">Name</label>
               <input type="text" class="input" name="user_name" required></input>
             </div>
@@ -124,7 +134,16 @@
           
           </form>
         
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message!
+          </div>
         </div>
+
+        <i class="fas fa-times modal__exit otherClick"></i>
 
       </div>
 
