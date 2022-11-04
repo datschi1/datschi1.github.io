@@ -25,7 +25,7 @@
           </li>
           <li class="nav__link">
             <a
-              href=""
+              href="#projects"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Projects</a
             >
@@ -54,7 +54,7 @@
             <br><span class="orange">I'm Dachi<span class="wave">👋</span></span></br>
           </h1>
           <p class="header__para">I'm a <b><span class="orange">Frontend Software Engineer</span></b> with a strong passion for building web apps and design with great user experiences.
-            <br>Here's a bit more <a><b><span class="orange">about me.</span></b></a></p>
+            <br>Here's a bit more <a href=""><b><span class="orange">about me.</span></b></a></p>
         </div>
         <div class="social__buttons">
             <a href="https://www.linkedin.com/in/dachi-gordiashvili-050104175/" target="_blank" class = "social__link click"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -71,11 +71,68 @@
       <div class="scroll__icon otherClick" ></div>
       </a>
       
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">Here's a bit more about me</h2>
+          <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+          <p class="modal__para">I'm a 19 year-old Georgian <b>frontend software engineer</b> with a strong passion for developing
+            <b>website apps and design</b> with great user experiences.<br>I currently work on extremely difficult
+            <b>engineering problems</b> and learn from a team consisting of some of the most talented and experienced software engineers
+            <b>every day.</b>
+          </p>
+          
+            <div class="modal__languages">
+              <figure class = "modal__language">
+                <img class = "modal__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                <span class="language__name">HTML</span>  
+              </figure>
+              <figure class = "modal__language">
+                <img class = "modal__img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
+                <span class="language__name">CSS</span>
+              </figure>
+              <figure class = "modal__language">
+                <img class = "modal__img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
+                <span class="language__name">JAVASCRIPT</span>
+              </figure>
+              <figure class = "modal__language">
+                <img class = "modal__img" src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png" alt="">
+                <span class="language__name">TYPESCRIPT</span>
+              </figure>
+            </div>  
+        </div>
+        
+        
+        <div class="modal__half modal__contact">
+          <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+          <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities</h4>
+          <form id="contact__form">
+            
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input type="text" class="input" name="user_name" required></input>
+            </div>
+            <div class="form__item">
+              <labelclass="form__item--label">Email</label>
+              <input type="email" class="input" name="user_email" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea type="text" class="input" name="user_message" required></textarea>
+            </div>
+            
+            <button id="contact__submit" class="form__submit">Send it my way</button>
+          
+          </form>
+        
+        </div>
+
+      </div>
+
     </section>
     <section id="projects">
         <div class="container">
             <div class="row">
-                <h1 class="section__title">Here are some of my<span class="orange"> Projects</span><br><span class="point">👇</span></h1>
+                <h1 class="section__title">Here are some of my<b> Projects</b><br><span class="point">👇</span></h1>
                 <ul>
                     <li class="project">
                         <div class="project__wrapper">
@@ -154,8 +211,8 @@
                     <img src="./assets/logo.svg" class="footer__img" alt="">
                 </figure>
                 <div class="footer__links">
-                    <a href="" class="footer__link link__hover--white">Github</a>
-                    <a href="" class="footer__link link__hover--white">Linkedin</a>
+                    <a href="https://github.com/datschi1" target = "_blank" class="footer__link link__hover--white">Github</a>
+                    <a href="https://www.linkedin.com/in/dachi-gordiashvili-050104175/" target = "_blank" class="footer__link link__hover--white">Linkedin</a>
                     <a href="" class="footer__link link__hover--white">Email</a>
                     <a href="" class="footer__link link__hover--white">Resume</a>
                 </div>

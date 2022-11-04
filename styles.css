@@ -13,6 +13,7 @@
     height: 50px;
 }
 
+
 li{
     list-style-type: none;
 }
@@ -64,11 +65,7 @@ button{
     padding: 0 12px;
 }
 
-.wave{
-    animation: waves 800ms infinite; 
-    display: inline-block;
-    font-size: 108px;
-}
+
 
 .link__hover-effect , .link__hover--white {
     position: relative;
@@ -98,6 +95,13 @@ button{
 .link__hover-effect:after{
     background-color: black;
 }
+
+.wave{
+    animation: waves 800ms infinite; 
+    display: inline-block;
+    font-size: 108px;
+}
+
 
 @keyframes waves {
     0% {
@@ -132,6 +136,40 @@ button{
     display: inline-block;
 }
 
+
+input, textarea{
+    width: 100%;
+    background-color: #242424;
+    color: white;
+    outline: none;
+    border: 3px solid #c0c4cc;
+    border-top: none ;
+    border-left: none;
+    border-right: none;
+    height: 40px;
+    transition: all 300ms ease;
+}
+
+input:hover , textarea:hover{
+    border-color: #dcdfe6;
+}
+
+input:focus , textarea:focus{
+    border-color: #f06449;
+}
+
+textarea{
+    resize: vertical;
+    height: 100px;
+    padding-top:8px;
+}
+
+label{
+    font-size: 14px ;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
 /* Say Hello to the LANDING */
 
 #landing {
@@ -162,7 +200,7 @@ button{
     width: 100%;
 }
 
-.orange{
+b{
     color: #f06449;
 }
 
@@ -286,6 +324,120 @@ nav{
     font-size: 20px;
 }
 
+
+/* Welcome to the MODAL */
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    max-width: 1100px;
+    width: 90%;
+    height:700px;
+    box-shadow: 0 20px 80px 0 rgb(0,0,0, 0.55) ;
+    overflow: hidden;
+    margin:20px 0;
+    border-radius:20px ;
+    display: flex;
+}
+
+.modal__half{
+    width:50%;
+    padding: 20px 72px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+}
+
+.modal__about{
+    background-color: rgb(245,245,245);
+
+  
+}
+
+.modal__title{
+    font-size: 26px;
+    font-weight: 900;
+
+}
+
+.modal__sub-title{
+    margin: 12px 0 24px 0;
+    font-size: 14px;
+}
+
+.modal__para{
+    margin-bottom: 12px;
+    line-height: 1.75;
+}
+
+.modal__languages{
+    display: flex;
+    flex-wrap: wrap;
+}
+.modal__language{
+    width: 25%;
+    padding: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 300ms ease;
+
+}
+
+.language__name{
+    position: absolute;
+    bottom: -10px;
+    text-align: center;
+    transform: scale(0);
+    transition: all 300ms ease;
+}
+
+.modal__language:hover .language__name{
+    transform: scale(1);
+}
+
+.modal__language:hover{
+    filter: brightness(80%);
+    transform: scale(0.9);
+}
+
+.modal__img{
+    width: 100%;
+}
+
+.modal__contact{
+    background-color: #242424;
+    color: white;
+}
+
+
+.form__item{
+    margin-bottom: 20px;
+}
+
+.form__submit{
+    background-color: #f06449;
+    border: 2px solid #f06449;
+    color: white;
+    width: 100%;
+    max-width: 240px;
+    padding: 12px 24px;
+    font-size: 24px;
+    transition: all 300ms ease;
+}
+
+.form__submit:hover{
+    border-color: white;
+    background-color: transparent;
+}
+
+.form__submit:active{
+    border-color: #f06449;
+    color: #f06449;
+}
 
 /* Welcome to the Projects */
 
