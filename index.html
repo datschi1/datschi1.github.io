@@ -40,9 +40,9 @@
               >Projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link"  onclick="toggleModal()">
             <a
-              href=""
+              href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Contact</a
             >
@@ -61,10 +61,10 @@
         <div class="header__container">
           <h1 class="title">
             Hey
-            <br><span class="orange">I'm Dachi<span class="wave">👋</span></span></br>
+            <br><b>I'm Dachi<span class="wave">👋</span></b></br>
           </h1>
-          <p class="header__para">I'm a <b><span class="orange">Frontend Software Engineer</span></b> with a strong passion for building web apps and design with great user experiences.
-            <br>Here's a bit more <a href=""><b><span class="orange">about me.</span></b></a></p>
+          <p class="header__para">I'm a <b>Frontend Software Engineer</b> with a strong passion for building web apps and design with great user experiences.
+            <br>Here's a bit more <a href="#"><b onclick="toggleModal()">about me.</b></a></p>
         </div>
         <div class="social__buttons">
             <a href="https://www.linkedin.com/in/dachi-gordiashvili-050104175/" target="_blank" class = "social__link click"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -74,7 +74,7 @@
         </div>
       </header>
 
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModal()">
         <a><i class="fa-regular fa-envelope"></i></a>
       </button>
       <a href="#projects" class="scroll">
@@ -106,13 +106,14 @@
               </figure>
               <figure class = "modal__language">
                 <img class = "modal__img" src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png" alt="">
-                <span class="language__name">TYPESCRIPT</span>
+                <span class="language__name">REACT</span>
               </figure>
             </div>  
         </div>
         
         
         <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit otherClick" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
           <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities</h4>
           <form id="contact__form" onsubmit="contact(event)">
@@ -143,7 +144,7 @@
           </div>
         </div>
 
-        <i class="fas fa-times modal__exit otherClick"></i>
+        
 
       </div>
 
