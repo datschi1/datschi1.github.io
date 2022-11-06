@@ -663,6 +663,7 @@ footer{
     background-color: #242424;
     display: flex;
     padding: 6% 0%;
+    position: relative;
 }
 
 .footer__row{
@@ -688,4 +689,74 @@ footer{
     justify-content: space-between;
     font-size: 16px;
 }
+
+
+
+/* 
+
+SHAPES 
+
+*/
+
+.shape{
+    position: fixed;
+}
+
+.shape--0 {
+    top: 15vh;
+    left: 5vw;
+}
+.shape--1 {
+    top: 15vh;
+    left: 50vw;
+}
+.shape--2 {
+    top: 15vh;
+    left: 80vw;
+}
+.shape--3 {
+    top: 50vh;
+    left: 5vw;
+}
+.shape--4 {
+    top: 50vh;
+    left: 50vw;
+}
+.shape--5 {
+    top: 50vh;
+    left: 5vw;
+}
+.shape--6 {
+    top: 95vh;
+    left: 5vw;
+}
+.shape--7 {
+    top: 95vh;
+    left: 50vw;
+}
+.shape--8 {
+    top: 80vh;
+    left: 80vw;
+}
+
+
+
+
+
+@media (max-width :768px) {
+    .title {
+        font-size: 80px;
+    }
+    .header__para {
+        font-size: 20px;
+    }
+    .modal {
+        top:0;
+        left: 0;
+        transform: none;
+        height: auto;
+        width: 100%;
+    }
+}
+
 
