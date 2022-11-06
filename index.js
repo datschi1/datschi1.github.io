@@ -2,6 +2,21 @@
 // service_5zpdfzg
 // B7GqQT_chh3wgoW0W
 
+let contrastToggle = false
+
+function toggleContrast(){
+    event.preventDefault()
+    contrastToggle = !contrastToggle
+    
+    if (contrastToggle) {
+        document.body.classList += " dark-theme"
+    }
+    else{
+        document.body.classList.remove("dark-theme")
+    }
+}
+
+
 function contact(event) {
     event.preventDefault()
     const loading = document.querySelector(".modal__overlay--loading");
@@ -35,4 +50,5 @@ function toggleModal() {
     document.body.classList += " modal__open"
     
 }
+
 
