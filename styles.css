@@ -295,10 +295,12 @@ b{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position:fixed;
     bottom: 32px;
     right: 40px;
     box-shadow: 0 12px 32px #242424;
+    z-index: 1000;
+
 }
 
 
@@ -755,6 +757,11 @@ SHAPES
         left: 0;
         transform: none;
         height: auto;
+        width: 100%;
+        flex-direction: column-reverse ;
+        border-radius: 0;
+    }
+    .modal__half {
         width: 100%;
     }
 }
